@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>McDonald's Registration Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffcc00 0%, #d11a2a 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+      width: 100%;
+      max-width: 500px;
+      padding: 32px;
+      box-sizing: border-box;
+    }
+
+    .brand {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      color: #d11a2a;
+      letter-spacing: 0.2em;
+      font-size: 32px;
+    }
+
+    .brand p {
+      margin: 8px 0 0;
+      color: #555;
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 15px;
+      box-sizing: border-box;
+      transition: border-color 0.2s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #d11a2a;
+      box-shadow: 0 0 0 3px rgba(209, 26, 42, 0.12);
+    }
+
+    .row {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    .submit-button {
+      border: none;
+      background: #d11a2a;
+      color: #fff;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .submit-button:hover {
+      background: #b41420;
+      transform: translateY(-1px);
+    }
+
+    .note {
+      font-size: 13px;
+      color: #666;
+      margin-top: -8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="brand">
+      <h1>McDonald’s</h1>
+      <p>Join the crew and unlock tasty rewards</p>
+    </div>
+
+    <form action="#" method="post">
+      <div class="row">
+        <div>
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="John" required />
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="birthDate">Date of Birth</label>
+          <input type="date" id="birthDate" name="birthDate" required />
+        </div>
+        <div>
+          <label for="favoriteLocation">Favorite Location</label>
+          <select id="favoriteLocation" name="favoriteLocation" required>
+            <option value="">Choose a location</option>
+            <option value="downtown">Downtown</option>
+            <option value="mall">Mall</option>
+            <option value="airport">Airport</option>
+            <option value="drive-thru">Drive-Thru</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label for="username">Create Username</label>
+        <input type="text" id="username" name="username" placeholder="mcdfan123" required />
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div>
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required />
+        </div>
+      </div>
+
+      <div>
+        <label for="favoriteMeal">Favorite Meal</label>
+        <textarea id="favoriteMeal" name="favoriteMeal" rows="3" placeholder="Tell us your go-to order" required></textarea>
+      </div>
+
+      <div class="full-width">
+        <label>
+          <input type="checkbox" name="newsletter" value="yes" />
+          Sign up for exclusive deals and promotions
+        </label>
+      </div>
+
+      <button type="submit" class="submit-button">Register Now</button>
+      <p class="note">By registering, you agree to receive updates and special offers from McDonald’s.</p>
+    </form>
+  </div>
+</body>
+</html>
