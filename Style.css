@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #1a365d;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    position: relative;
+}
+
+#main-header {
+    background-color: #1a365d;
+    padding: 15px 0;
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-block; 
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3182ce;
+}
+
+.welcome-section {
+    background: #163345;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.welcome-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-content h2 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.welcome-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #dd6b20;
+    color: #ffffff;
+    border: none; 
+}
+
+.btn-primary:hover {
+    background-color: #c05621;
+}
+
+.courses-section {
+    padding: 60px 0;
+}
+
+.courses-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #ffffff;
+    flex: 1;
+    min-width: 280px;
+    padding: 30px; 
+    margin-bottom: 20px; 
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    position: relative; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #2b6cb0;
+}
+
+.badge {
+    position: absolute; 
+    top: 15px;
+    right: 15px;
+    background-color: #e53e3e;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.notice-section {
+    padding: 60px 0;
+    background-color: #edf2f7;
+}
+
+.notice-box {
+    background: #ffffff;
+    border-left: 5px solid #3182ce;
+    padding: 20px;
+    height: 250px; 
+    overflow-y: scroll; 
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.notice-item {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e0;
+}
+
+.notice-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.notice-item h4 {
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.notice-item p {
+    font-size: 0.95rem;
+    color: #4a5568;
+}
+
+.campus-section {
+    padding: 60px 0;
+}
+
+.campus-container {
+    position: relative; 
+    height: 400px;
+    margin-top: 20px;
+}
+
+.campus-image-placeholder {
+    width: 80%;
+    height: 350px;
+    background-color: #cbd5e0;
+    border: 2px solid #a0aec0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.placeholder-text {
+    color: #4a5568;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.campus-info-box {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 45%;
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    z-index: 10; 
+} 
+
+.campus-info-box h3 {
+    margin-bottom: 12px;
+    color: #ebf8ff;
+}
+
+.fixed-contact-btn {
+    position: fixed; 
+    bottom: 30px;
+    right: 30px;
+    background-color: #3182ce;
+    color: #ffffff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 999; 
+    transition: transform 0.2s ease, background-color 0.2s;
+}
+
+.fixed-contact-btn:hover {
+    background-color: #2b6cb0;
+    transform: scale(1.05);
+}
+
+
+#footer {
+    background-color: #2d3748;
+    color: #a0aec0;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.footer-college-name {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#footer a {
+    color: #63b3ed;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 0.85rem;
+}
